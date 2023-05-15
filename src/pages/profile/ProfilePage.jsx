@@ -15,7 +15,7 @@ const ProfilePage = () => {
             <div className="profile__body">
                 <h1>Edit Profile</h1>
                 <div className="profile__info">
-                    <img src="https://dreamvilla.life/wp-content/uploads/2017/07/dummy-profile-pic.png" alt="" />
+                    <img src="https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-88wkdmjrorckekha.jpg" alt="" />
                     <div className="profile__details">
                         <h2>{user.email}</h2>
                         <div className="profile__plans">

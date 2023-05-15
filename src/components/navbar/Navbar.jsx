@@ -35,7 +35,7 @@ const Navbar = () => {
                     <span>KID</span>
                     <Notifications className="icon"/>
                     <img
-                        src="https://i.pinimg.com/1200x/c3/53/7f/c3537f7ba5a6d09a4621a77046ca926d.jpg"
+                        src="https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-88wkdmjrorckekha.jpg"
                         alt=""
                         onClick={() => navigate("/profile")}
                     />

@@ -1,0 +1,105 @@
+.register {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0.4) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/8f12b4f0-a894-4d5b-9c36-5ba391c63fbe/d48940a4-4477-4405-9a8e-ca78b975089d/ID-en-20230320-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size: cover;
+    position: relative;
+
+    .top {
+        .wrapper {
+            padding: 20px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logo {
+                height: 40px;
+                z-index: 5;
+                cursor: pointer;
+            }
+
+            .login__button {
+                background-color: #e50914;
+                border: none;
+                color: #fff;
+                border-radius: 5px;
+                padding: 5px 15px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                z-index: 99;
+
+                &:hover {
+                    transition: 0.3s ease-in-out;
+                    background-color: #b50914;
+                }
+            }
+        }
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+
+        h1 {
+            font-size: 50px;
+            font-weight: 900;
+        }
+
+        h2 {
+            margin: 20px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .input {
+            width: 50%;
+            height: 50px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            border-radius: 5px;
+
+            input {
+                flex: 9;
+                height: 100%;
+                border: none;
+                padding: 0 10px;
+            }
+
+            .register__button {
+                flex: 3;
+                height: 100%;
+                background-color: #e50914;
+                border: none;
+                color: #fff;
+                font-size: 22px;
+                cursor: pointer;
+
+                &:hover {
+                    transition: 0.3s ease-in-out;
+                    background-color: #b50914;
+                }
+            }
+        }
+    }
+}

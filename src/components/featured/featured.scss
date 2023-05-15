@@ -1,0 +1,100 @@
+@import "../../app.scss";
+
+.featured {
+    height: 95vh;
+    position: relative;
+
+    .category {
+        position: absolute;
+        top: 80px;
+        left: 50px;
+        font-size: 30px;
+        font-weight: 500;
+        color: #fff;
+        display: flex;
+        align-items: center;
+
+        select {
+            cursor: pointer;
+            background-color: var(--main-color);
+            border: 1px solid #fff;
+            color: #fff;
+            margin-left: 20px;
+            padding: 5px;
+        }
+    }
+
+    .banner {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        .fade--bottom {
+            height: 95vh;
+            background-image: linear-gradient(
+                180deg,
+                transparent,
+                rgba(37, 37, 37, 0.02),
+                #0b0b0b
+            );
+        }
+    }
+
+    
+
+    .info {
+        width: 40%;
+        position: absolute;
+        left: 50px;
+        bottom: 140px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            font-size: 50px;
+            font-weight: 600;
+            text-shadow: 5px 5px 10px #111;
+        }
+
+        .desc {
+            margin: 20px 0;
+            text-shadow: 5px 5px 10px #111;
+
+            @include mobile {
+                width: 60vw;
+            }
+        }
+
+        .buttons {
+            display: flex;
+
+            button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+                font-weight: 500;
+                margin-right: 10px;
+                cursor: pointer;
+
+                &.play {
+                    background-color: #fff;
+                    color: var(--main-color);
+                }
+
+                &.more {
+                    background-color: rgba(128, 128, 128, 0.5);
+                    color: #fff;
+                }
+
+                span {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

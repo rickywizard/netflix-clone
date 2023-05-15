@@ -35,7 +35,7 @@ const Navbar = () => {
                     <span>KID</span>
                     <Notifications className="icon"/>
                     <img
-                        src="https://dreamvilla.life/wp-content/uploads/2017/07/dummy-profile-pic.png"
+                        src="https://i.pinimg.com/1200x/c3/53/7f/c3537f7ba5a6d09a4621a77046ca926d.jpg"
                         alt=""
                         onClick={() => navigate("/profile")}
                     />
